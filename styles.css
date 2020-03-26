@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    font-family: gerogia;
+}
+
+
+h1{
+    color: crimson;
+    text-align: center;
+    font-size: 25px;
+}
+
+.img{
+    text-align: center;
+}
+
+.myJam{
+    top:1000px;
+    position:absolute;
+}
+
+.wrapper {
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #161616;
+}
+
+.login-box{
+    position:absolute;
+    left:50%;
+    margin-left:-210px;
+    background-color:#fff;
+    padding:20px 40px;
+    width:315px;
+    top:400px;
+    z-index:101;
+    border:5px solid #9474b8;
+    border-radius:10px}
+
+.login-box h1{color:#ff6300;
+    font:26px ubuntubold,Arial,Helvetica,serif;
+    margin:10px 0 0}#login-box h2{color:#494949;
+    font:12px ubuntu,Arial,Helvetica,serif;
+    margin:0 0 10px}
+
+#login-box p{margin:3px 0}#login-box label{margin:10px 0 0}
+
+#login-box form input{margin:0}
+
+#login-box form input[type=text],
+
+#login-box form input[type=password]{width:300px;
+    margin:0 0 10px}
+
+#login-box form .button{margin-left:230px}
+
+#login-box hr{margin:20px 0 10px}
+
+#login-box .pagename{color:#ff6300;
+    font:26px ubuntubold,Arial,Helvetica,serif;
+    margin:10px 0}

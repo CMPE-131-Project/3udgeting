@@ -1,48 +1,98 @@
 <!DOCTYPE html>
 <html>
-    
+
     <link rel="StyleSheet" type="text/css" href="styles.css"/>
-    
-    
+
+
     <head>
-        
-        <script type="text/javascript" src="script.js"></script>
-        
-        <script type="text/javascript">
-                $(function(){
-                    alert("My First Jquery Test");
-                });
-        </script>
-        
-        
-        
+
+        <meta charset="utf-8">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+        <title>3udgeting Panels</title>
     </head>
 
 
     <body>
-        
+
         <div class="wrapper">
                <center>
-                    <img itemprop="logo" title="" alt="logo" width="250" height="105" src="INSERTPICTUREHERE.png" style="margin-top:7px">
+                    <img itemprop="logo" title="" alt="logo" width="250" height="105" src="3udgetingLogo.png" style="margin-top:7px">
                 </center>
         </div>
-        
-        
- 
-        
-        <center>
-        <div class="login-box" id="login-box" style="display: block;">
 
-            <h1>Please enter by using the form below</h1>
 
-            <label for="id_password">Password:</label>
-            <input id="id_password" maxlength="69" name="password" type="password">
-            <input type="submit" value="Login" class="button">
 
+
+
+
+        <canvas id="barChart" height="400" width="720"></canvas>
+        <canvas id="monthChart" height="400" width="720"></canvas>
+        <canvas id="pieChart" height="380" width="720"></canvas>
+
+
+
+        <div class="input">
+	         <h2>Add Purchase</h2>
+           <form id="myform" action="/example" autocomplete="on" method="post">
+  <input placeholder="Enter a string" name="search">
+  <input type="submit" value="send" name="btn">
+</form>
+
+<select name="metods" form="myform">
+  <option value="a">a</option>
+  <option value="b">b</option>
+  <option value="c">c</option>
+  </select>
         </div>
-            </center>
-            
+
+
+
+        <script src="barChart.js"></script>
+        <script src="monthChart.js"></script>
+        <script src="pieChart.js"></script>
+
+
+
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
     </body>
-    
-    
+
+
 </html>

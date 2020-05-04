@@ -23,7 +23,6 @@ let barChart = new Chart(ctx, {
                 'rgba(147, 240, 158, 1)',
                 'rgba(240, 155, 147, 1)',
                 'rgba(147, 240, 158, 1)'
-
             ],
             borderColor:'#777',
             borderWidth: 1

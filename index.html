@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-        <title>3udgeting Panels</title>
+        <title>3udgeting HomePage</title>
     </head>
 
 
@@ -21,7 +21,7 @@
 
         <div class="wrapper">
                <center>
-                    <img itemprop="logo" title="" alt="logo" width="250" height="105" src="3udgetingLogo.png" style="margin-top:7px">
+                    <img itemprop="logo" title="" alt="logo" width="250" height="150" src="3udgeting.png" style="margin-top:7px">
                 </center>
         </div>
 
@@ -38,16 +38,57 @@
 
         <div class="input">
 	         <h2>Add Purchase</h2>
-           <form id="myform" action="/example" autocomplete="on" method="post">
-  <input placeholder="Enter a string" name="search">
-  <input type="submit" value="send" name="btn">
-</form>
+           <form id="myform" action="/example" method="post">
+              <label for="Name of Purchase">Name Of Purchase:</label>
+              <input placeholder="" name="search">
+           </form>
 
-<select name="metods" form="myform">
-  <option value="a">a</option>
-  <option value="b">b</option>
-  <option value="c">c</option>
-  </select>
+           <select name="metods" form="myform">
+               <option value="">Select Category</option>
+               <option value="Entertainment">Entertainment</option>
+               <option value="Food">Food</option>
+               <option value="Housing">Housing</option>
+               <option value="Insurance">Insurance</option>
+               <option value="Transportation">Transportation</option>
+               <option value="Utilities">Utilities</option>
+               <option value="Miscellaneous">Miscellaneous</option>
+           </select>
+
+
+           <form id="myform" action="/example" method="post">
+             <label for="Purchase Date">Purchase Date:</label>
+              <input placeholder="(MM/DD/YYYY)" name="search">
+           </form>
+
+
+           <form id="myform" action="/example" method="post">
+              <label for="Price">Price:</label>
+              <input placeholder="(Exclude $)" name="search">
+           </form>
+
+
+          <form id="myform" action="/example" method="post">
+            <label for="Description">Description:</label>
+             <input placeholder="(Optional)" name="search">
+           </form>
+
+
+
+          <input type="submit" value="Add Purchase" name="btn">
+
+
+
+        </div>
+
+
+
+
+        <div class="input">
+	         <h2>Delete Purchase</h2>
+           <form id="myform2" action="/example" autocomplete="on" method="post">
+              <input placeholder="Enter Purchase #ID" name="search">
+              <input type="submit" value="Delete Purchase" name="btn">
+           </form>
         </div>
 
 
@@ -58,36 +99,48 @@
 
 
 
-        <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Category</th>
+            <th scope="col">Purchase Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <th scope="row">#1723</th>
+            <td>05/01/20</td>
+            <td>Food</td>
+            <td>McDonalds</td>
+            <td>$34.56</td>
+            <td>Line took forever</td>
+          </tr>
+          <tr>
+            <th scope="row">#1723</th>
+            <td>05/01/20</td>
+            <td>Food</td>
+            <td>McDonalds</td>
+            <td>$34.56</td>
+            <td>Line took forever</td>
+          </tr>
+          <tr>
+            <th scope="row">#1723</th>
+            <td>05/01/20</td>
+            <td>Food</td>
+            <td>McDonalds</td>
+            <td>$34.56</td>
+            <td>Line took forever</td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
 
 
 
